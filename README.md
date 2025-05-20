@@ -1,8 +1,8 @@
 <h1 align="center">React Admin Dashboard</h1>
 
 ![Demo App](/public/screenshot-for-readme-1.png)
-![Demo App](/public/screenshot-for-readme-2.png)
-![Demo App](/public/screenshot-for-readme-3.png)
+<!-- ![Demo App](/public/screenshot-for-readme-2.png)
+![Demo App](/public/screenshot-for-readme-3.png) -->
 
 
 -   React
@@ -23,8 +23,3 @@ npm install
 npm run start
 ```
 
-Look into framer motion.
-Look into recharts package.
-Look into .src/components/products/ProdctTable.js
-Change profile picture in .src/components/settings/Profile.jsx
-Update user names in src/component/users/UsersTable.jsx

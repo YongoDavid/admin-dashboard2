@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
 import { Edit, Search, Trash2 } from "lucide-react";
 import { useState } from "react";
+import EarPods from './Image/dushawn-jovic-uKVtzSyaLd4-unsplash.jpg';
+import Wallet from './Image/kisetsu-co-Xbjf9nnEQ4s-unsplash.jpg';
+import Watch from './Image/daniel-canibano-JE3ASpuEld4-unsplash.jpg';
+import Mat from './Image/the-nix-company--CwwRyyH6Tc-unsplash.jpg';
+import CoffeeMaker from './Image/ronan-furuta-AjcABUQ7WuA-unsplash.jpg';
 
 const PRODUCT_DATA = [
-	{ id: 1, name: "Wireless Earbuds", category: "Electronics", price: 59.99, stock: 143, sales: 1200 },
-	{ id: 2, name: "Leather Wallet", category: "Accessories", price: 39.99, stock: 89, sales: 800 },
-	{ id: 3, name: "Smart Watch", category: "Electronics", price: 199.99, stock: 56, sales: 650 },
-	{ id: 4, name: "Yoga Mat", category: "Fitness", price: 29.99, stock: 210, sales: 950 },
-	{ id: 5, name: "Coffee Maker", category: "Home", price: 79.99, stock: 78, sales: 720 },
+	{ id: 1, name: "Wireless Earbuds", category: "Electronics", price: 59.99, stock: 143, sales: 1200, image: EarPods },
+	{ id: 2, name: "Leather Wallet", category: "Accessories", price: 39.99, stock: 89, sales: 800, image: Wallet },
+	{ id: 3, name: "Smart Watch", category: "Electronics", price: 199.99, stock: 56, sales: 650, image: Watch },
+	{ id: 4, name: "Yoga Mat", category: "Fitness", price: 29.99, stock: 210, sales: 950, image: Mat },
+	{ id: 5, name: "Coffee Maker", category: "Home", price: 79.99, stock: 78, sales: 720, image: CoffeeMaker },
 ];
 
 const ProductsTable = () => {
@@ -79,11 +84,11 @@ const ProductsTable = () => {
 								transition={{ duration: 0.3 }}
 							>
 								<td className='px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100 flex gap-2 items-center'>
-									<img
-										src='https://images.unsplash.com/photo-1627989580309-bfaf3e58af6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2lyZWxlc3MlMjBlYXJidWRzfGVufDB8fDB8fHww'
+										<img
+										src={product.image}
 										alt='Product img'
 										className='size-10 rounded-full'
-									/>
+										/>
 									{product.name}
 								</td>
 
