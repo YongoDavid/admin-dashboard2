@@ -10,7 +10,7 @@
 -   Recharts
 -   Framer Motion
 
-It is completely responsive and can be used for any type of web application.
+This is completely responsive and can be used for any type of web application.
 
 
 ### Run this app locally
